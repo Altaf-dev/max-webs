@@ -1,6 +1,7 @@
 @import "color.scss";
 
 .header {
+  position: relative;
 
   &__wrapper {
     position: relative;
@@ -42,6 +43,7 @@
       border-radius: 10px;
       background-color: $light-text;
       box-shadow: 0 0 15px -3px rgba(34, 60, 80, 0.05);
+      z-index: 20;
       overflow: hidden;
       transition: .3s;
     }
@@ -173,6 +175,7 @@
     padding-right: 40px;
     border-radius: 5px;
     border: 2px solid $decor-color;
+    background-color: $light-text;
     transition: .3s;
     @media screen and (max-width: 1199px) {
       display: block;

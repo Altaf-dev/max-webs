@@ -9,3 +9,7 @@ MENU_BTN.onclick = function () {
 }
 
 
+$(document).ready(function () {
+    $(".phone-mask").mask("9 (999) 999-99-99");
+});
+

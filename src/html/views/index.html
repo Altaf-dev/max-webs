@@ -7,7 +7,48 @@ description: "Какое то описание для страницы, для �
 <%= _.template(require('./../includes/header.html').default)(data) %>
 
 <main class="main-page">
-  <input id="page-name" type="text" value="main-page" hidden>
+  <div class="container">
+    <section class="main">
+      <h1 class="main__title">
+        <p class="title-text">У нас вы найдете лучшие</p>
+        <p class="title-text">светодиодные лампы</p>
+        <p class="title-text">для животоводства</p>
+      </h1>
+      <div class="main__callback">
+        <p class="callback-desc">Оставьте нам свой номер, и получите <span class="text-decor">бесплатный</span> рассчет специально для вас!</p>
+        <form action="#" class="main__form">
+          <input type="text" class="main__input phone-mask" placeholder="7 (ххх) ххх хх хх">
+          <button type="submit" class="main__btn">Отправить</button>
+        </form>
+      </div>
+      <img src="img/main-bg.png" alt="background" class="main__background">
+    </section>
+    <section class="advantage">
+      <div class="advantage__wrapper">
+        <h2 class="advantage__title">
+          <p class="title-text">Расскажем вам</p>
+          <p class="title-text">немного о себе</p>
+        </h2>
+        <p class="advantage__subtitle">Мы ценим ваше время, по этому мы постараемся рассказать о <span class="text-decor">главном вкратце!</span></p>
+        <div class="advantage__desc">
+          <img src="img/advantage-bg.png" alt="img" class="advantage__img">
+          <div class="description-list">
+            <p class="list-item">
+              Наша компания была основана в 2015 году, название ей «ЭлипсЛед». Занимаемся мы производством светильников для животноводства
+            </p>
+            <p class="list-item">
+              Работаем мы исключительно на собственном оборудовании и только с качественным сырьем.
+            </p>
+            <p class="list-item">
+              С помощью команды наших специалистов
+              мы смогли добиться одного из самых высоких уровней качества светодиодных светильников
+              для свиноводства, КРС, выращивания грибов!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 
 </main>
 
