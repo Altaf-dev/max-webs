@@ -28,11 +28,44 @@
   }
 
   &__title {
+    position: relative;
     width: 660px;
     margin-top: 75px;
     margin-bottom: 30px;
     @media screen and (max-width: 767px) {
       width: 100%;
+    }
+    .title-text {
+      display: block;
+      position: relative;
+      font-size: 6rem;
+      font-weight: bold;
+      width: fit-content;
+      &:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 10px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        bottom: 10px;
+        background-color: $decor-color;
+        z-index: -5;
+      }
+      @media screen and (max-width: 767px) {
+        font-size: 3.4rem;
+        &:before {
+          display: block;
+          height: 5px;
+          bottom: 5px;
+        }
+      }
+      @media screen and (max-width: 425px) {
+        font-size: 2.4rem;
+        &:before {
+
+        }
+      }
     }
   }
 
@@ -125,9 +158,60 @@
   }
 
   &__title {
+    display: flex;
     position: relative;
     width: fit-content;
     font-size: 6rem;
+    @media screen and (max-width: 1199px) {
+      flex-direction: column;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 10px;
+      left: 50%;
+      transform: translate(-50%, 0);
+      bottom: 10px;
+      background-color: $decor-color;
+      z-index: -5;
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
+    }
+    .title-text {
+      display: block;
+      position: relative;
+      font-size: 6rem;
+      font-weight: bold;
+      width: fit-content;
+      &:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 10px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        bottom: 10px;
+        background-color: $decor-color;
+        z-index: -5;
+      }
+      @media screen and (max-width: 767px) {
+        font-size: 3.4rem;
+        &:before {
+          display: block;
+          height: 5px;
+          bottom: 5px;
+        }
+      }
+      @media screen and (max-width: 425px) {
+        font-size: 2.4rem;
+        &:before {
+
+        }
+      }
+    }
+
   }
 
   &__subtitle {
